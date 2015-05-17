@@ -1,0 +1,18 @@
+apply plugin: "eclipse"
+apply plugin: "idea"
+apply plugin: "java"
+apply plugin: "application"
+
+sourceCompatibility = 1.7
+
+sourceSets.main.java.srcDirs = ["src/"]
+
+//tasks.withType(Compile) {
+//    options.compilerArgs << "-Xlint:unchecked"
+//}
+eclipse.project {
+    name = 'gdx-sqlite'
+}
+
+dependencies {
+}

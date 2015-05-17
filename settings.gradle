@@ -1,0 +1,8 @@
+include 'desktop'
+include 'android'
+include 'ios'
+include 'core'
+include 'gdx-sqlite'
+include 'gdx-sqlite-desktop'
+include 'gdx-sqlite-android'
+include 'gdx-sqlite-robovm'

@@ -1,0 +1,34 @@
+allprojects {
+    apply plugin: "eclipse"
+    apply plugin: "idea"
+
+    version = '1.0'
+    ext {
+        appName = '%APP_NAME%'
+        gdxVersion = '1.0.0'
+        roboVMVersion = '0.0.11'
+    }
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+}
+
+apply plugin: "java"
+
+sourceCompatibility = 1.7
+
+sourceSets.main.java.srcDirs = ["src/"]
+
+//tasks.withType(Compile) {
+//    options.compilerArgs << "-Xlint:unchecked"
+//}
+
+eclipse.project {
+    name = appName + "-desktop"
+}
+
+dependencies {
+}

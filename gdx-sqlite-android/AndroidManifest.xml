@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright 2010-present Facebook.
+ *
+ * Licensed under the Apache org.kingmonkey.libs.config.License, Version 2.0 (the "org.kingmonkey.libs.config.License");
+ * you may not use this file except in compliance with the org.kingmonkey.libs.config.License.
+ * You may obtain a copy of the org.kingmonkey.libs.config.License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the org.kingmonkey.libs.config.License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the org.kingmonkey.libs.config.License for the specific language governing permissions and
+ * limitations under the org.kingmonkey.libs.config.License.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.badlogic.gdx.sqlite.android">
+    <application/>
+    <uses-sdk android:minSdkVersion="9" />
+</manifest>
