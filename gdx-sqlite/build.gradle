@@ -1,18 +1,22 @@
-apply plugin: "eclipse"
-apply plugin: "idea"
 apply plugin: "java"
 apply plugin: "application"
 
 sourceCompatibility = 1.7
+sourceSets.main.java.srcDirs = [ "src/" ]
 
-sourceSets.main.java.srcDirs = ["src/"]
+mainClassName = "com.badlogic.gdx.sql.Main"
+project.ext.mainClassName = mainClassName
+project.ext.assetsDir = new File("../android/assets");
 
-//tasks.withType(Compile) {
-//    options.compilerArgs << "-Xlint:unchecked"
-//}
-eclipse.project {
-    name = 'gdx-sqlite'
+task dist(type: Jar) {
+    from files(sourceSets.main.output.classesDir)
+    from files(sourceSets.main.output.resourcesDir)
+    from {configurations.compile.collect {zipTree(it)}}
+    from files(project.assetsDir);
+
+    manifest {
+        attributes 'Main-Class': project.mainClassName
+    }
 }
 
-dependencies {
-}
+dist.dependsOn classes

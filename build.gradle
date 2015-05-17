@@ -94,6 +94,7 @@ project(":core") {
 // DB
 project(":gdx-sqlite") {
     apply plugin: "java"
+    apply plugin: "application"
 
     dependencies {
         compile "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
@@ -139,7 +140,7 @@ project(":gdx-sqlite-android") {
 
 project(":gdx-sqlite-robovm") {
     apply plugin: "java"
-    apply plugin: "robovm"
+//    apply plugin: "robovm"
 
     configurations { natives }
 
