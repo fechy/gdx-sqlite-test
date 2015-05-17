@@ -1,4 +1,6 @@
 build/
+ios/robovm-build/
+gdx-sqlite-robovm/robovm-build/
 
 ## Java
 
