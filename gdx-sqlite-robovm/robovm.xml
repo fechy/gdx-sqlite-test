@@ -11,9 +11,9 @@
   <forceLinkClasses>
     <pattern>com.badlogic.gdx.sql.*</pattern>
     <pattern>com.badlogic.gdx.sqlite.robovm.*</pattern>
-    <pattern>com.badlogic.gdx.sqlite.robovm.RobovmDatabaseManager</pattern>
     <pattern>org.sqlite.JDBC</pattern>
     <pattern>SQLite.**</pattern>
+    <pattern>SQLite.JDBC2z.*</pattern>
   </forceLinkClasses>
   <libs>
     <lib>build/libs/ios/libgdx-freetype.a</lib>

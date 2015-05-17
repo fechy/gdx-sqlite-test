@@ -23,6 +23,7 @@
     <pattern>com.badlogic.gdx.sqlite.**</pattern>
     <pattern>org.sqlite.JDBC</pattern>
     <pattern>SQLite.**</pattern>
+    <pattern>SQLite.JDBC2z.*</pattern>
     <pattern>com.android.okhttp.HttpHandler</pattern>
     <pattern>com.android.okhttp.HttpsHandler</pattern>
     <pattern>com.android.org.conscrypt.**</pattern>
